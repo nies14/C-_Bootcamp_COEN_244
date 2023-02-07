@@ -16,7 +16,6 @@ int main() {
     input_file.open(filename);
   }
 
-  std::ofstream error_file("errors.txt");
   int totalSum = 0, lineSum = 0;
   std:: string errorValue = "";
   char c;
@@ -66,7 +65,6 @@ int main() {
   std::cout << "The Sum is: " << totalSum << std::endl;
 
   input_file.close();
-  error_file.close();
 
   return 0;
 }
